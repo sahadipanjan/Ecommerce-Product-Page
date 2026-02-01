@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="product-images/brand.jpg" alt="Brand Logo" class="brand-logo">
+            <h1>Our Products</h1>
+        </div>
+        <div class="filters">
+            <div class="filter-group">
+                <label for="category-filter">Filter by Category:</label>
+                <select id="category-filter">
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by">
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                    <option value="price-asc">Price (Low to High)</option>
+                    <option value="price-desc">Price (High to Low)</option>
+                    <option value="rating-asc">Rating (Low to High)</option>
+                    <option value="rating-desc">Rating (High to Low)</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main id="product-grid" class="product-grid">
+        <!-- Products will be inserted here by JavaScript -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
